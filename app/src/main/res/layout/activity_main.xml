@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ddd"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="232dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="44dp"
+        android:background="#57ECE0"
+        android:ellipsize="none"
+        android:gravity="center"
+        android:padding="2sp"
+        android:text="QUIZ APP"
+        android:textAlignment="center"
+        android:textColor="#3B1480"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="330dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="60dp"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <TextView
+            android:id="@+id/question"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FD5F7E"
+            android:fontFamily="serif"
+            android:gravity="center|left"
+            android:paddingLeft="20sp"
+            android:paddingRight="10sp"
+            android:text="TextView"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+    <ListView
+        android:id="@+id/options"
+        android:layout_width="374dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="#FCF6F5FF"
+        android:cacheColorHint="#ECEAEA"
+        android:listSelector="@color/white"
+        android:minHeight="48dp"
+        android:padding="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.432"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="210dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="100dp"
+        android:backgroundTint="#970365"
+        android:onClick="nextques"
+        android:padding="10dp"
+        android:text="NEXT QUESTION"
+        android:textColor="#E5F8F4"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:cornerRadius="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

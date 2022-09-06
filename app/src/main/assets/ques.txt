@@ -1,0 +1,30 @@
+APK stands for ?
+Android Phone Kit
+Android Page Kit
+Android Package Kit
+None of the above
+Android Package Kit
+For which of the following Android is mainly developed ?
+Servers
+Desktops
+Laptops
+Mobile devices
+Mobile devices
+Which of the following virtual machine is used by the Android operating system ?
+JVM
+Dalvik virtual machine
+Simple virtual machine
+None of the above
+Dalvik virtual machine
+Android is based on which of the following language ?
+Java
+C++
+C
+None of the above
+Java
+We require an AVD to create an emulator. What does AVD stand for ?
+Android Virtual device
+Android Virtual display
+Active Virtual display
+Active Virtual device
+Android Virtual device
